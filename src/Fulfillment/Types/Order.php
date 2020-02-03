@@ -22,6 +22,7 @@ namespace DTS\eBaySDK\Fulfillment\Types;
  * @property \DTS\eBaySDK\Fulfillment\Types\LineItem[] $lineItems
  * @property \DTS\eBaySDK\Fulfillment\Enums\OrderFulfillmentStatus $orderFulfillmentStatus
  * @property string $orderId
+ * @property string $legacyOrderId
  * @property \DTS\eBaySDK\Fulfillment\Enums\OrderPaymentStatusEnum $orderPaymentStatus
  * @property \DTS\eBaySDK\Fulfillment\Types\PaymentSummary $paymentSummary
  * @property \DTS\eBaySDK\Fulfillment\Types\PricingSummary $pricingSummary
@@ -92,6 +93,12 @@ class Order extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'orderId'
+        ],
+        'legacyOrderId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'legacyOrderId'
         ],
         'orderPaymentStatus' => [
             'type' => 'string',
