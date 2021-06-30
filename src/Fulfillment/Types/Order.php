@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\Fulfillment\Types;
  * @property string $buyerCheckoutNotes
  * @property \DTS\eBaySDK\Fulfillment\Types\CancelStatus $cancelStatus
  * @property string $creationDate
+ * @property boolean $ebayCollectAndRemitTax
  * @property string[] $fulfillmentHrefs
  * @property \DTS\eBaySDK\Fulfillment\Types\FulfillmentStartInstruction[] $fulfillmentStartInstructions
  * @property string $lastModifiedDate
@@ -57,6 +58,12 @@ class Order extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
+        ],
+        'ebayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ebayCollectAndRemitTax'
         ],
         'fulfillmentHrefs' => [
             'type' => 'string',

@@ -15,6 +15,7 @@ namespace DTS\eBaySDK\Fulfillment\Types;
  * @property \DTS\eBaySDK\Fulfillment\Types\AppliedPromotion[] $appliedPromotions
  * @property \DTS\eBaySDK\Fulfillment\Types\DeliveryCost $deliveryCost
  * @property \DTS\eBaySDK\Fulfillment\Types\Amount $discountedLineItemCost
+ * @property \DTS\eBaySDK\Fulfillment\Types\EbayCollectAndRemitTaxes $ebayCollectAndRemitTaxes
  * @property \DTS\eBaySDK\Fulfillment\Types\GiftDetails $giftDetails
  * @property string $legacyItemId
  * @property string $legacyVariationId
@@ -56,6 +57,12 @@ class LineItem extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountedLineItemCost'
+        ],
+        'ebayCollectAndRemitTaxes' => [
+            'type' => 'DTS\eBaySDK\Fulfillment\Types\EbayCollectAndRemitTaxes',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'ebayCollectAndRemitTaxes'
         ],
         'giftDetails' => [
             'type' => 'DTS\eBaySDK\Fulfillment\Types\GiftDetails',
