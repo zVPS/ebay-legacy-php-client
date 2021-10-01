@@ -19,6 +19,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\AspectUsageCodeType $AspectUsage
  * @property integer $MaxValueLength
  * @property \DTS\eBaySDK\Trading\Enums\ProductRequiredCodeType $ProductRequired
+ * @property \DTS\eBaySDK\Trading\Enums\UsageConstraintCodeType $UsageConstraint
  * @property integer $Confidence
  * @property \DTS\eBaySDK\Trading\Types\NameValueRelationshipType[] $Relationship
  * @property \DTS\eBaySDK\Trading\Enums\VariationPictureRuleCodeType $VariationPicture
@@ -73,6 +74,12 @@ class RecommendationValidationRulesType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ProductRequired'
         ],
+        'UsageConstraint' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'UsageConstraint'
+        ],
         'Confidence' => [
             'type' => 'integer',
             'repeatable' => false,
@@ -102,12 +109,6 @@ class RecommendationValidationRulesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ValueFormat'
-        ],
-        'UsageConstraint' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UsageConstraint'
         ]
     ];
 

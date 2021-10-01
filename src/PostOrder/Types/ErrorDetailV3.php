@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $longMessage
  * @property string $message
  * @property string $outputRefIds
- * @property \DTS\eBaySDK\PostOrder\Types\ErrorParameterV3[] $parameters
+ * @property \DTS\eBaySDK\PostOrder\Types\ErrorParameterV3 $parameters
  * @property string $subDomain
  */
 class ErrorDetailV3 extends \DTS\eBaySDK\Types\BaseType
@@ -72,7 +72,7 @@ class ErrorDetailV3 extends \DTS\eBaySDK\Types\BaseType
         ],
         'parameters' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\ErrorParameterV3',
-            'repeatable' => true,
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'parameters'
         ],

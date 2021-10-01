@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $severity
  * @property string $category
  * @property string $message
- * @property \DTS\eBaySDK\PostOrder\Types\ErrorParameter[] $parameter
+ * @property \DTS\eBaySDK\PostOrder\Types\ErrorParameter $parameter
  * @property string $longMessage
  * @property integer $httpStatusCode
  * @property string $errorName
@@ -70,7 +70,7 @@ class Error extends \DTS\eBaySDK\Types\BaseType
         ],
         'parameter' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\ErrorParameter',
-            'repeatable' => true,
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'parameter'
         ],
