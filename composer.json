@@ -1,5 +1,5 @@
 {
-    "name": "dts/ebay-sdk-php",
+    "name": "zvps/ebay-legacy-php-client",
     "description": "An eBay SDK for PHP. Use the eBay API in your PHP projects.",
     "keywords": ["ebay", "api", "sdk"],
     "homepage": "http://devbay.net/",
@@ -9,11 +9,18 @@
         {
             "name": "David T. Sadler",
             "email": "davidtsadler@googlemail.com",
-            "homepage": "http://davidtsadler.com"
+            "homepage": "http://davidtsadler.com",
+            "role": "Author/Creator"
+        },
+        {
+            "name": "Kevin Andrews",
+            "email": "kevin@zvps.uk",
+            "homepage": "https://zvps.uk",
+            "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/davidtsadler/ebay-sdk-php/issues"
+        "issues": "https://github.com/zVPS/ebay-legacy-php-client/issues"
     },
     "require": {
         "php": ">=5.5",
@@ -36,5 +43,24 @@
             "DTS\\eBaySDK\\Test\\": "test/"
         },
         "classmap": ["build/"]
+    },
+    "conflict": {
+        "dts/ebay-sdk-php": "*"
+    },
+    "suggest": {
+        "ebay-sell-php-client": "",
+        "ebay-sell-analytics-php-client": "",
+        "ebay-sell-finances-php-client": "",
+        "ebay-sell-listing-php-client": "",
+        "ebay-sell-metadata-php-client": "",
+        "ebay-sell-compliance-php-client": "",
+        "ebay-sell-fulfillment-php-client": "",
+        "ebay-sell-logistics-php-client": "",
+        "ebay-sell-negotiation-php-client": "",
+        "ebay-sell-account-php-client": "",
+        "ebay-sell-feed-php-client": "",
+        "ebay-sell-inventory-php-client": "",
+        "ebay-sell-marketing-php-client": "",
+        "ebay-sell-recommendation-php-client": ""
     }
 }
