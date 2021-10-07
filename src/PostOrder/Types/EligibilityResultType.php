@@ -14,7 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property string $caseId
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnEligibilityErrorDetailType[] $eligibilityErrorDetail
- * @property \DTS\eBaySDK\PostOrder\Types\StatusType $eligibilityStatus
+ * @property \DTS\eBaySDK\PostOrder\Enums\StatusType $eligibilityStatus
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $eligibleStartDate
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnCreationDate
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnDeadline
@@ -39,7 +39,7 @@ class EligibilityResultType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'eligibilityErrorDetail'
         ],
         'eligibilityStatus' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\StatusType',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityStatus'

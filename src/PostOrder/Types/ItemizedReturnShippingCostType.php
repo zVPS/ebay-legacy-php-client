@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $amount
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnShippingCostType $returnShippingCostType
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnShippingCostType $returnShippingCostType
  */
 class ItemizedReturnShippingCostType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -28,7 +28,7 @@ class ItemizedReturnShippingCostType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'amount'
         ],
         'returnShippingCostType' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnShippingCostType',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnShippingCostType'
